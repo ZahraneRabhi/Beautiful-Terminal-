@@ -3,7 +3,7 @@
 - Will add more functionalities soon...
 
 # ToDo:
-- Make the loading bar pourcentage dynamic
+- Make the loading bar pourcentage dynamic✅
 - Add constraints to prevent certain argument values( example: bar_length = 0)
 - Try making the loading_bar speed depending on - certain conditions instead of just randomizing the speed_rate
 - Khw so far until further Ideas
