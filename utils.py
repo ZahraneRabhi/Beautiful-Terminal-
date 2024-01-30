@@ -16,13 +16,14 @@ def loading_bar(speed='FAST', length=100, color="terminal"):
     else:
         def gen_(): yield from [iteration for iteration in range(length)]
         _ =style[color.upper()]+"█"
-        pourcentage = "0"
-        place_holder = "".join(["-" for _ in gen_()])+"|"+pourcentage
-
+        place_holder = "".join(["-" for _ in gen_()])+"|"
+        pourcentage = "0%"
         for i in gen_():
-            print("\r Progress: {}%".format(place_holder), end = '')
+            print("\r Progress: {} {}".format(place_holder, pourcentage), end = '')
             place_holder = place_holder.replace("-", _, 1)
-            speed_rate = uniform(0, 0.1)
+            pourcentage = str(i) + "%"
+            speed_rate = uniform(
+                                speed_dic[speed][0],
+                                speed_dic[speed][1])
             sleep(speed_rate)
-
 

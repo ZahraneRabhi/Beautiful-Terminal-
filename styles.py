@@ -17,6 +17,6 @@ style = {
 
 speed_dic = {
         "FAST": [0, 0.1],
-        "SLOW": [0, 0.1],
-        "NORMAL": [0, 0.1]
+        "NORMAL": [0.3, 0.4],
+        "SLOW": [0.6, 1]
 }
