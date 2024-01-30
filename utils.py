@@ -2,7 +2,7 @@ from time import *
 from random import *
 from styles import * 
 
-def test(speed='FAST', length=100, color="terminal"):
+def loading_bar(speed='FAST', length=100, color="terminal"):
     """
     Prints a loading bar 
     Args:

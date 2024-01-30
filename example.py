@@ -1,4 +1,4 @@
 from utils import *
 
 # Prints a loading bar
-test("fast", 4, "TERMINAL")
+loading_bar("fast", 4, "TERMINAL")
