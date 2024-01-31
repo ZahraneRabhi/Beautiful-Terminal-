@@ -14,7 +14,7 @@ def loading_bar(speed='FAST', length=100, color="terminal"):
         print("You should pick a speed zaab!")
         return None
     else:
-        def gen_(): yield from [iteration for iteration in range(length)]
+        def gen_(): yield from [iteration for iteration in range(length+1)]
         _ =style[color.upper()]+"█"
         place_holder = "".join(["-" for _ in gen_()])+"|"
         pourcentage = "0%"
@@ -26,4 +26,8 @@ def loading_bar(speed='FAST', length=100, color="terminal"):
                                 speed_dic[speed][0],
                                 speed_dic[speed][1])
             sleep(speed_rate)
+    print("\n")
+
+def message(message="your_message", type="ALERT", color="PURPLE"):
+     print(style[color.upper()]+f"{'='*len(message)}\n{message}\n{'='*len(message)}") 
 
