@@ -7,5 +7,7 @@
 - Add constraints to prevent certain argument values( example: bar_length = 0)
 - Making the loading_bar speed depending on - certain conditions instead of just randomizing the speed_rate
 - Implement my own Ascii Art Alphabet 
-- damn zab we in a roadblock ngl
 - Khw so far until further Ideas
+
+# Bugs:
+- The loading bar is bugged when the terminal window is minimized
