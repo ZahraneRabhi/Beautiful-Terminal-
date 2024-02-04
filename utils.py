@@ -28,6 +28,23 @@ def loading_bar(speed='FAST', length=100, color="terminal"):
             sleep(speed_rate)
     print("\n")
 
-def message(message="your_message", type="ALERT", color="PURPLE"):
-     print(style[color.upper()]+f"{'='*len(message)}\n{message}\n{'='*len(message)}") 
+def message(message="your message", type="BRACKET", color="TERMINAL"): 
+    """
+    Prints a message  
+    Args:
+        - message (str)
+        - type (str): [BRACKET, THICK, THIN]
+        - color (str): [PURPLE, RED, TERMINAL, GREEN] 
+    """
+    match type.upper():
+        case "THIN":
+            print(style[color.upper()]+f"{'-'*len(message)}\n{message}\n{'-'*len(message)}")
+        case "THICK":
+            print(style[color.upper()]+f"{'='*len(message)}\n{message}\n{'='*len(message)}") 
+        case "BRACKET":
+            print(style[color.upper()]+"[ {} ]".format(message)) 
+        case _:
+            print("Pick a Type zaab!")
+
+
 
