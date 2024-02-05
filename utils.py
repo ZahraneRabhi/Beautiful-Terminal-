@@ -48,7 +48,6 @@ def message(message="your message", type="BRACKET", color="TERMINAL"):
         case _:
             print("Pick a Type zaab!")
     print(text_color["TERMINAL"])
-    print("\n")
 
 
 def change_terminal_background(color="BLACK"):
@@ -57,7 +56,7 @@ def change_terminal_background(color="BLACK"):
     Args:
         - color (str): [PURPLE, RED, TERMINAL, GREEN ...] 
     """
-    os.system('color {}'.format(background_color[color]))
+    os.system('color {}'.format(background_color[color.upper()]))
 
 
 
